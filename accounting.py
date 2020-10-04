@@ -12,6 +12,7 @@ def retrieve_underpaid_customers(file):
         customer_name = customer_data[1]
         number_melons = customer_data[2]
         customer_paid = customer_data[3]
+        
 
 
 
