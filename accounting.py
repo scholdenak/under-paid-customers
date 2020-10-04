@@ -1,3 +1,17 @@
+def retrieve_underpaid_customers(file):
+    """parses through external customer file to find underpaid customers
+    
+    this is how we make it do the thing in more detail"""
+
+    customer_file = open(file)
+    for line in customer_file:
+        customer_line = line.rstrip()
+        customer_data = line.split("|")
+
+
+
+
+
 melon_cost = 1.00
 
 customer1_name = "Joe"
