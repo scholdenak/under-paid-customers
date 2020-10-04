@@ -16,7 +16,7 @@ def retrieve_underpaid_customers(file):
         
         
         if customer_expected > float(customer_paid):
-            print(customer_name)
+            print(f"{customer_name} expected to pay {str(customer_expected)} but only paid {customer_paid}")
 
 retrieve_underpaid_customers("customer-orders.txt")
 
