@@ -13,8 +13,9 @@ def retrieve_underpaid_customers(file):
         number_melons = customer_data[2]
         customer_paid = customer_data[3]
         
+        print(customer_name)
 
-
+retrieve_underpaid_customers("customer-orders.txt")
 
 # melon_cost = 1.00
 
