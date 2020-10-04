@@ -10,10 +10,13 @@ def retrieve_underpaid_customers(file):
 
         melon_cost = 1.00
         customer_name = customer_data[1]
-        number_melons = customer_data[2]
-        customer_paid = customer_data[3]
+        number_melons = float(customer_data[2])
+        customer_paid = float(customer_data[3])
+        #customer_expected = float(number_melons) * float(melon_cost)
         
-        print(customer_name)
+        
+        if (number_melons * melon_cost) > (customer_paid):
+            print(customer_name)
 
 retrieve_underpaid_customers("customer-orders.txt")
 
